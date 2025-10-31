@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Srinivas Sayinni</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#coding-profiles">Coding Profiles</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Srinivas Sayinni</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#coding-profiles" onclick="toggleMenu()">Coding Profiles</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="Screenshot 2025-10-25 001905.png" alt="srinivas profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Srinivas Sayinni</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Srinivas-Sayinni-FlowCV-Resume-20251031.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="Screenshot 2025-10-27 161202.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sayinni-srinivas-aa208a267?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bvrp1mMTBT726aKRag3FL3Q%3D%3D'"
+          />
+          <img
+            src="Screenshot 2025-10-27 161500.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Srinivas800'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="Screenshot 2025-10-27 162749.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="Screenshot 2025-10-27 163007.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Software Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="Screenshot 2025-10-27 163330.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech. Computer Science and<br />Engineering (AI/ML)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             I'm Srinivas Sayinni, a Passionate and results-driven final-year student at CMR Institute of Technology, Hyderabad, skilled in Python, Java, HTML5, CSS, JavaScript, and Automation, with hands-on experience in developing web-based platforms and automation systems to improve efficiency and user experience. Proficient in web scraping, email automation, responsive design, task scheduling, and Git/GitHub version control, with a strong focus on solving real-world problems through innovative and impactful technological solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Screenshot 2025-10-27 163818.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="Screenshot 2025-10-27 173720.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML&CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Screenshot 2025-10-27 173720.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVASCRIPT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="Screenshot 2025-10-27 173720.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>REACT</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="Screenshot 2025-10-27 173720.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java(Spring Boot)</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+           <div class="details-container">
+             <h2 class="experience-sub-title">Databases</h2>
+             <div class="article-container">
+              <article>
+                <img
+                  src="Screenshot 2025-10-27 173720.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+
+              </article>
+
+             </div>
+
+           </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Cloud & Tools</h2>
+              <div class="article-container">
+                <article class="skill">
+  <img src="Screenshot 2025-10-27 173720.png" alt="Experience icon" class="icon" />
+  <div>
+    <h3>OCI (Oracle Cloud Infrastructure)</h3>
+    <p>Intermediate</p>
+  </div>
+</article>
+
+<article class="skill">
+  <img src="Screenshot 2025-10-27 173720.png" alt="Experience icon" class="icon" />
+  <div>
+    <h3>Git / GitHub</h3>
+    <p>Intermediate</p>
+  </div>
+</article>
+
+              </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+      </div>
+      <img
+  src="Screenshot 2025-10-27 163818.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#coding-profiles'" />
+</section>
+    </section>
+<section id="coding-profiles">
+      <p class="section__text__p1">Check Out My</p>
+      <h1 class="title">Coding Profiles</h1>
+
+      <div class="coding-profiles-container">
+        
+        <a
+          href="https://leetcode.com/u/srinivassayinni/"
+          target="_blank"
+          class="profile-link-bar"
+        >
+          <img
+            src="leetcode.svg"
+            alt="LeetCode Logo"
+            class="profile-logo"
+          />
+          <span class="profile-username">srinivassayinni</span>
+          <span class="profile-stats">150+ Problems Solved</span>
+          <i class="fa-solid fa-arrow-up profile-arrow"></i>
+        </a>
+
+        <a
+          href="https://www.geeksforgeeks.org/user/srinivaszzce/?_gl=1*5f8mcq*_up*MQ..*_gs*MQ..&gclid=CjwKCAjw04HIBhB8EiwA8jGNbc6A4B-740slJcHQUZIAdAp0pl47xeIlxSymfuFcfSFAcvn4_a2u1hoC8xcQAvD_BwE&gbraid=0AAAAAC9yBkDTXtBG65htTOUzq592OKRBI"
+          target="_blank"
+          class="profile-link-bar"
+        >
+          <img
+            src="icons8-geeksforgeeks-48.png"
+            alt="GeeksforGeeks Logo"
+            class="profile-logo"
+          />
+          <span class="profile-username">srinivaszzce</span>
+          <span class="profile-stats">Overall Score: 500+</span>
+          <i class="fa-solid fa-arrow-up profile-arrow"></i>
+        </a>
+
+      </div>
+      <img
+        src="Screenshot 2025-10-27 163818.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Screenshot 2025-10-27 175337.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Automated Job Alert System for Software Roles(Email daily at 12 PM IST)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Srinivas800/daily-job-email'"
+              >
+                Github
+              </button>
+              <button
+  class="btn btn-color-2 project-btn"
+  onclick="window.open('https://youtu.be/PjhM1kWfIXM')"
+>
+  Watch Demo
+</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Screenshot 2025-10-27 180204.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Automob-mechanic shop</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Srinivas800/Automob-Mechanic'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://automob-shop.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="Screenshot 2025-10-27 181215.png"
+      alt="Project 3"
+      class="project-img"
+    />
+  </div>
+  <h2 class="experience-sub-title project-title">YOLO-ESCA: A High-Performance Safety Helmet
+ Standard Wearing Behavior Detection Model
+ Based on Improved YOLOv5</h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https'" >
+      Github (Soon)
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="openImageModal('workInProgressModal')" >
+      View Status
+    </button>
+  </div>
+</div>
+        </div>
+      </div>
+      <img
+  src="Screenshot 2025-10-27 163818.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#certificates'" />
+</section>
+<section id="certificates">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Certificates</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              </div>
+            <h2 class="experience-sub-title project-title">AI Fundamentals with IBM SkillsBuild</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem;">
+              Issued by: Cisco
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.credly.com/badges/d2aa590c-e453-4258-99fe-dd035c49b0a5/public_url'"
+              >
+                View Credential
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h2 class="experience-sub-title project-title">HTML5 & CSS Application Development Fundamentals</h2>
+  <p style="text-align: center; margin-bottom: 1.5rem;">
+    Issued by: Infosys Springboard
+  </p>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="openImageModal('infosysCertModal')"
+    >
+      View Credential
+    </button>
+  </div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    </div>
+  <h2 class="experience-sub-title project-title">SaWiT.AI Challenge</h2>
+  <p style="text-align: center; margin-bottom: 1.5rem;">
+    Issued by:HCLTech
+  </p>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://www.guvi.in/share-certificate/253c7995U7h1yW017P'"
+    >
+      View Credential
+    </button>
+  </div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    </div>
+  <h2 class="experience-sub-title project-title">Python</h2>
+  <p style="text-align: center; margin-bottom: 1.5rem;">
+    Issued by: HCLTech
+  </p>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://www.guvi.in/share-certificate/720365d714sP6uBI17'"
+    >
+      View Credential
+    </button>
+  </div>
+</div>
+
+          </div>
+      </div>
+      <img
+        src="Screenshot 2025-10-27 163818.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+   
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="Screenshot 2025-10-27 181519.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:srinivassayinni@gmail.com">srinivassayinni@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="Screenshot 2025-10-27 161202.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sayinni-srinivas-aa208a267?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FcKUwpYAQwqpK2ZQStfKMw%3D%3D">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <div id="imageModal" class="modal-overlay">
+  <span class="close-btn" onclick="closeImageModal()">&times;</span>
+  <div class="modal-content">
+    
+    <img id="infosysCertModal" class="modal-image" src="Screenshot 2025-10-28 001328.png" alt="Infosys Certificate">
+    <img id="workInProgressModal" class="modal-image" src="Screenshot 2025-10-28 011731.png" alt="Work In Progress">
+    
+    </div>
+</div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#coding-profiles">Coding Profiles</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2025 <span class="highlight-name">Srinivas Sayinni</span>. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
