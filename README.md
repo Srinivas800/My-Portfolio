@@ -4,8 +4,8 @@ This is the code for my personal portfolio website, designed to showcase my skil
 
 It is a clean, responsive, single-page application built with vanilla HTML, CSS, and JavaScript.
 
-![Portfolio Screenshot](<img width="695" height="314" alt="Screenshot 2025-10-31 154653" src="https://github.com/user-attachments/assets/e57be19b-b68d-40e8-aada-7f44cdaa80a0" />
-)
+
+
 
 ## Features
 
