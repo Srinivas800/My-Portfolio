@@ -268,6 +268,9 @@ section {
 }
 
 .about-containers {
+display: flex;
+  flex-wrap: wrap; /* ADD THIS: Allows cards to move to the next row */
+  justify-content: center; /* Keeps cards centered if they wrap */
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -335,6 +338,8 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  min-width: 300px; /* This prevents the boxes from getting too narrow */
+  flex: 1 1 300px;
 }
 
 .article-container {
@@ -582,4 +587,35 @@ block if you want to keep them square.
 .profile-arrow {
   font-size: 1.2rem;
   color: #008000; /* Green color for arrow */
+}
+#certificates .details-container {
+  min-width: 250px; /* Adjust this value to match your desired width */
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#experience .about-containers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* This ensures containers move to a new line when out of space */
+  gap: 2rem;
+}
+.profile-link-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Keeps items aligned to the left */
+  overflow: hidden; /* Prevents text from spilling out */
+  white-space: nowrap; /* Keeps username on one line */
+}
+
+.profile-username {
+  flex-shrink: 1; /* Allows name to shrink slightly if needed */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds '...' if the name is too long */
+}
+
+.profile-arrow {
+  margin-left: auto; /* Always pushes the arrow to the far right */
+  flex-shrink: 0; /* Prevents the arrow from getting squashed */
 }
