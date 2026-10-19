@@ -104,3 +104,52 @@
       text-align: justify;
     }
   }
+  /* Update your existing details-container style */
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  
+  /* ADD THESE TWO LINES */
+  min-width: 300px; /* Adjust this to force the wrap */
+  flex-basis: 300px; 
+}
+
+/* Ensure the parent allows wrapping */
+.about-containers {
+  display: flex;
+  flex-wrap: wrap; /* Essential for moving to the next row */
+  justify-content: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 600px) {
+  /* Allow the container to use more width on mobile */
+  .coding-profiles-container {
+    width: 95%;
+    padding-top: 1rem;
+  }
+
+  /* Reduce padding and font size so everything fits in one line */
+  .profile-link-bar {
+    padding: 1rem;
+    gap: 0.5rem; /* Adds consistent spacing between elements */
+  }
+
+  .profile-logo {
+    height: 25px; /* Smaller logo for mobile */
+    margin-right: 0.5rem;
+  }
+
+  .profile-username {
+    font-size: 1rem; /* Smaller text to prevent overflow */
+  }
+
+  /* Hide stats on very small screens if they still cause overlapping */
+  .profile-stats {
+    display: none;
+  }
+}

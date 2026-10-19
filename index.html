@@ -9,6 +9,57 @@
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <style>
+  /* Force exactly two project cards per row */
+  #projects .about-containers {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      gap: 2.5rem !important;
+      max-width: 1100px !important;
+      margin: 0 auto !important;
+  }
+
+  #projects .about-containers .color-container {
+      flex: 0 0 calc(50% - 1.25rem) !important;
+      max-width: calc(50% - 1.25rem) !important;
+      box-sizing: border-box !important;
+  }
+
+  @media screen and (max-width: 768px) {
+      #projects .about-containers .color-container {
+          flex: 0 0 100% !important;
+          max-width: 100% !important;
+      }
+  }
+</style>
+
+<style>
+  #projects .details-container {
+      padding: 1.5rem !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #projects .project-img {
+      width: 100% !important;
+      height: auto !important;
+      max-width: none !important;
+      margin-bottom: 1rem !important;
+  }
+
+  #projects .experience-sub-title.project-title {
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.5rem !important;
+      font-size: 1.6rem !important;
+  }
+
+  #projects .btn-container {
+      margin-top: 0.5rem !important;
+  }
+</style>
+
   </head>
   <body>
     <nav id="desktop-nav">
@@ -49,11 +100,11 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Srinivas Sayinni</h1>
-        <p class="section__text__p2">Software Developer</p>
+        <p class="section__text__p2">Software Engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('Srinivas-Sayinni-FlowCV-Resume-20251031.pdf')"
+            onclick="window.open('https://drive.google.com/file/d/1Mr0t43DxELYCmv2TRNDNP-NIMxPajPDB/view?usp=sharing')"
           >
             Download CV
           </button>
@@ -97,7 +148,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>Software Developer</p>
+              <p>Software Engineer</p>
             </div>
             <div class="details-container">
               <img
@@ -111,9 +162,9 @@
           </div>
           <div class="text-container">
             <p>
-             I'm Srinivas Sayinni, a Passionate and results-driven final-year student at CMR Institute of Technology, Hyderabad, skilled in Python, Java, HTML5, CSS, JavaScript, and Automation, with hands-on experience in developing web-based platforms and automation systems to improve efficiency and user experience. Proficient in web scraping, email automation, responsive design, task scheduling, and Git/GitHub version control, with a strong focus on solving real-world problems through innovative and impactful technological solutions.
-            </p>
-          </div>
+              B.Tech CS graduate specialising in enterprise Java development, Spring Boot, and secure REST API design, with proven experience architecting and deploying full-stack backend systems using JPA/Hibernate, SQL, and Docker. Also skilled in automation and applied AI/ML, including computer vision projects built with YOLOv5 and PyTorch. Seeking a Software Engineer role to build scalable, high-availability enterprise systems.
+                      </p>
+            </div>
         </div>
       </div>
       <img
@@ -124,122 +175,141 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="Screenshot 2025-10-27 173720.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML&CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="Screenshot 2025-10-27 173720.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JAVASCRIPT</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="Screenshot 2025-10-27 173720.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>REACT</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  
+  <div class="experience-grid-wrapper">
+    <!-- Languages Box -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Languages</h2>
+      <div class="skills-grid">
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>Java</h3>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="Screenshot 2025-10-27 173720.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java(Spring Boot)</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              
-            </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>JavaScript</h3>
           </div>
-           <div class="details-container">
-             <h2 class="experience-sub-title">Databases</h2>
-             <div class="article-container">
-              <article>
-                <img
-                  src="Screenshot 2025-10-27 173720.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-
-              </article>
-
-             </div>
-
-           </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Cloud & Tools</h2>
-              <div class="article-container">
-                <article class="skill">
-  <img src="Screenshot 2025-10-27 173720.png" alt="Experience icon" class="icon" />
-  <div>
-    <h3>OCI (Oracle Cloud Infrastructure)</h3>
-    <p>Intermediate</p>
-  </div>
-</article>
-
-<article class="skill">
-  <img src="Screenshot 2025-10-27 173720.png" alt="Experience icon" class="icon" />
-  <div>
-    <h3>Git / GitHub</h3>
-    <p>Intermediate</p>
-  </div>
-</article>
-
-              </div>
-
-
-            </div>
-
-
-
-
-
-
-        </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>Python</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>HTML5</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>CSS3</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>SQL</h3>
+          </div>
+        </article>
       </div>
-      <img
-  src="Screenshot 2025-10-27 163818.png"
-  alt="Arrow icon"
-  class="icon arrow"
-  onclick="location.href='./#coding-profiles'" />
+    </div>
+
+    <!-- Frameworks & Tools Box -->
+    <div class="details-container">
+      <h2 class="experience-sub-title">Framework & Tools/Technical skills</h2>
+      <div class="skills-grid">
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>Spring Boot</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>PostgreSQL</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>JPA / Hibernate</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>Docker</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>REST APIs</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>YOLOv5 & PyTorch</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>Git & CI/CD</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+    <!-- Core Concepts Box -->
+    <div class="details-container core-concepts-box">
+      <h2 class="experience-sub-title">Core Concepts</h2>
+      <div class="skills-grid">
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>OOP Architecture</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>Relational DBMS</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>Data Structures & Algos</h3>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-circle-check skill-check-icon"></i>
+          <div>
+            <h3>System Design</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <img
+    src="Screenshot 2025-10-27 163818.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#coding-profiles'" 
+  />
 </section>
-    </section>
 <section id="coding-profiles">
       <p class="section__text__p1">Check Out My</p>
       <h1 class="title">Coding Profiles</h1>
@@ -257,22 +327,22 @@
             class="profile-logo"
           />
           <span class="profile-username">srinivassayinni</span>
-          <span class="profile-stats">150+ Problems Solved</span>
+          <span class="profile-stats"></span>
           <i class="fa-solid fa-arrow-up profile-arrow"></i>
         </a>
 
         <a
-          href="https://www.geeksforgeeks.org/user/srinivaszzce/?_gl=1*5f8mcq*_up*MQ..*_gs*MQ..&gclid=CjwKCAjw04HIBhB8EiwA8jGNbc6A4B-740slJcHQUZIAdAp0pl47xeIlxSymfuFcfSFAcvn4_a2u1hoC8xcQAvD_BwE&gbraid=0AAAAAC9yBkDTXtBG65htTOUzq592OKRBI"
+          href="https://takeuforward.org/profile/srinivas800"
           target="_blank"
           class="profile-link-bar"
         >
           <img
-            src="icons8-geeksforgeeks-48.png"
+            src="Screenshot 2026-09-21 164000.png"
             alt="GeeksforGeeks Logo"
             class="profile-logo"
           />
-          <span class="profile-username">srinivaszzce</span>
-          <span class="profile-stats">Overall Score: 500+</span>
+          <span class="profile-username">srinivas sayinni</span>
+          <span class="profile-stats"></span>
           <i class="fa-solid fa-arrow-up profile-arrow"></i>
         </a>
 
@@ -293,6 +363,58 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
+                src="Screenshot 2025-10-27 180204.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Automob-Mechanic — Full Stack Car Service Booking System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Srinivas800/Automob-Mechanic'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://automob-mechanic.onrender.com/admin/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+            <br>
+            <aside>Please note: Estimated load time is up to 90 seconds.</aside>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Pedal Pro AI Bike Rentals.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Agentforce — Pedal Pro Rentals</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Srinivas800/Agentforce--Pedal-Pro-Rental'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://automob-mechanic.onrender.com/admin/index.html'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+            <br>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
                 src="Screenshot 2025-10-27 175337.png"
                 alt="Project 1"
                 class="project-img"
@@ -308,36 +430,14 @@
               </button>
               <button
   class="btn btn-color-2 project-btn"
-  onclick="window.open('automation.mp4')"
+  onclick="window.open('https://youtu.be/PjhM1kWfIXM')"
 >
   Watch Demo
 </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="Screenshot 2025-10-27 180204.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Automob-mechanic shop</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Srinivas800/Automob-Mechanic'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://automob-shop.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+          
+
           <div class="details-container color-container">
   <div class="article-container">
     <img
@@ -346,20 +446,27 @@
       class="project-img"
     />
   </div>
-  <h2 class="experience-sub-title project-title">YOLO-ESCA: A High-Performance Safety Helmet
- Standard Wearing Behavior Detection Model
- Based on Improved YOLOv5</h2>
-  <div class="btn-container">
-    <button
-      class="btn btn-color-2 project-btn"
-      onclick="location.href='https'" >
-      Github (Soon)
-    </button>
-    <button
-      class="btn btn-color-2 project-btn"
-      onclick="openImageModal('workInProgressModal')" >
-      View Status
-    </button>
+  <h2 class="experience-sub-title project-title">Advanced YOLO-ESCA Framework for Helmet Wearing Compliance Detection  </h2>
+ <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Srinivas800/Advanced-YOLO-ESCA-Framework-for-Enhanced-Helmet-Wearing-Compliance-Detection'"
+              >
+                Github
+              </button>
+              <button
+  class="btn btn-color-2 project-btn"
+  onclick="window.open('https://www.youtube.com/watch?v=eunlGNuFzlo')"
+>
+  Watch Demo
+</button>
+ <!-- <button
+  class="btn btn-color-2 project-btn"
+  onclick="window.open('https://drive.google.com/file/d/1h3j6c6oYVSs6YNXe5pR5ceIXUqIwiLT0/view?usp=sharing')"
+>
+ view file
+</button> -->
+
   </div>
 </div>
         </div>
@@ -377,16 +484,32 @@
         <div class="about-containers">
           
           <div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h2 class="experience-sub-title project-title">Agentforce Specialist</h2>
+  <p style="text-align: center; margin-bottom: 1.5rem;">
+    Issued by: Salesforce
+  </p>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="openImageModal('AgentcertModal')"
+    >
+      View Credential
+    </button>
+  </div>
+</div>
+           <div class="details-container color-container">
             <div class="article-container">
               </div>
-            <h2 class="experience-sub-title project-title">AI Fundamentals with IBM SkillsBuild</h2>
+            <h2 class="experience-sub-title project-title">Certificate Of Merit Naukri Campus Young Turks 2026 </h2>
             <p style="text-align: center; margin-bottom: 1.5rem;">
-              Issued by: Cisco
+              Issued by: HCLTech
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.credly.com/badges/d2aa590c-e453-4258-99fe-dd035c49b0a5/public_url'"
+                onclick="location.href='https://www.naukri.com/campus/certificates/young_turks26_round_1_achievement/v0/6acf493596ebe313e740c60b?utm_source=certificate&utm_medium=copy&utm_campaign=6acf493596ebe313e740c60b'"
               >
                 View Credential
               </button>
@@ -440,7 +563,22 @@
     </button>
   </div>
 </div>
-
+<div class="details-container color-container">
+            <div class="article-container">
+              </div>
+            <h2 class="experience-sub-title project-title">AI Fundamentals with IBM SkillsBuild</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem;">
+              Issued by: Cisco
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.credly.com/badges/d2aa590c-e453-4258-99fe-dd035c49b0a5/public_url'"
+              >
+                View Credential
+              </button>
+            </div>
+          </div>
           </div>
       </div>
       <img
@@ -478,8 +616,10 @@
   <span class="close-btn" onclick="closeImageModal()">&times;</span>
   <div class="modal-content">
     
+    <img id="AgentcertModal" class="modal-image" src="Screenshot 2025-12-30 200112.png" alt="Agentforce">
     <img id="infosysCertModal" class="modal-image" src="Screenshot 2025-10-28 001328.png" alt="Infosys Certificate">
     <img id="workInProgressModal" class="modal-image" src="Screenshot 2025-10-28 011731.png" alt="Work In Progress">
+    
     
     </div>
 </div>
@@ -496,8 +636,17 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright © 2025 <span class="highlight-name">Srinivas Sayinni</span>. All Rights Reserved.</p>
+      <p>Copyright © 2026 <span class="highlight-name">Srinivas Sayinni</span>. All Rights Reserved.</p>
     </footer>
+    <style>
+      .concepts-container .article-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: start;
+      }
+    </style>
     <script src="script.js"></script>
+  </body>
   </body>
 </html>
