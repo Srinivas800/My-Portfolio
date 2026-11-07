@@ -1,0 +1,154 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+      display: block;
+      border-radius: 50%;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+      border-radius: 50%;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #contact {
+      height: 40vh;
+    }
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+  }
+  /* Update your existing details-container style */
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  
+  /* ADD THESE TWO LINES */
+  min-width: 300px; /* Adjust this to force the wrap */
+  flex-basis: 300px; 
+}
+
+/* Ensure the parent allows wrapping */
+.about-containers {
+  display: flex;
+  flex-wrap: wrap; /* Essential for moving to the next row */
+  justify-content: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 600px) {
+  /* Allow the container to use more width on mobile */
+  .coding-profiles-container {
+    width: 95%;
+    padding-top: 1rem;
+  }
+
+  /* Reduce padding and font size so everything fits in one line */
+  .profile-link-bar {
+    padding: 1rem;
+    gap: 0.5rem; /* Adds consistent spacing between elements */
+  }
+
+  .profile-logo {
+    height: 25px; /* Smaller logo for mobile */
+    margin-right: 0.5rem;
+  }
+
+  .profile-username {
+    font-size: 1rem; /* Smaller text to prevent overflow */
+  }
+
+  /* Hide stats on very small screens if they still cause overlapping */
+  .profile-stats {
+    display: none;
+  }
+}

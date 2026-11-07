@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+       <link rel="icon" type="image/png" href="me.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+  /* Force exactly two project cards per row */
+  #projects .about-containers {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      gap: 2.5rem !important;
+      max-width: 1100px !important;
+      margin: 0 auto !important;
+  }
+
+  #projects .about-containers .color-container {
+      flex: 0 0 calc(50% - 1.25rem) !important;
+      max-width: calc(50% - 1.25rem) !important;
+      box-sizing: border-box !important;
+  }
+
+  @media screen and (max-width: 768px) {
+      #projects .about-containers .color-container {
+          flex: 0 0 100% !important;
+          max-width: 100% !important;
+      }
+  }
+</style>
+
+<style>
+  #projects .details-container {
+      padding: 1.5rem !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #projects .project-img {
+      width: 100% !important;
+      height: auto !important;
+      max-width: none !important;
+      margin-bottom: 1rem !important;
+  }
+
+  #projects .experience-sub-title.project-title {
+      margin-top: 0.5rem !important;
+      margin-bottom: 0.5rem !important;
+      font-size: 1.6rem !important;
+  }
+
+  #projects .btn-container {
+      margin-top: 0.5rem !important;
+  }
+</style>
+
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <nav id="desktop-nav" aria-label="Primary">
+      <div class="logo">Srinivas Sayinni</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#coding-profiles">Coding Profiles</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav" aria-label="Mobile">
+      <div class="logo">Srinivas Sayinni</div>
+      <div class="hamburger-menu">
+        <button type="button" class="hamburger-icon" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="menu-links" id="mobile-menu">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#coding-profiles" onclick="toggleMenu()">Coding Profiles</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main" tabindex="-1">
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/profile.webp" alt="Portrait of Srinivas Sayinni" fetchpriority="high" decoding="async" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Srinivas Sayinni</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <a class="btn btn-color-2" href="https://drive.google.com/file/d/1yt2Aili40oHxnEy2e_3-Twazy1tR7gKX/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="btn btn-color-1" href="#contact">Contact Info</a>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/sayinni-srinivas-aa208a267?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bvrp1mMTBT726aKRag3FL3Q%3D%3D" aria-label="LinkedIn profile"><img src="images/icon-linkedin.webp" alt="" class="icon" width="96" height="97" decoding="async" /></a>
+          <a href="https://github.com/Srinivas800" aria-label="GitHub profile"><img src="images/icon-github.webp" alt="" class="icon" width="96" height="84" decoding="async" /></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h2 class="title">About Me</h2>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="images/about-me.webp"
+            alt="Srinivas Sayinni"
+            class="about-pic"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="images/icon-experience.webp"
+                alt=""
+                class="icon"
+                width="96" height="97"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3>Experience</h3>
+              <p>Software Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="images/icon-education.webp"
+                alt=""
+                class="icon"
+                width="96" height="97"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3>Education</h3>
+              <p>B.Tech. Computer Science and<br />Engineering (AI/ML)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              B.Tech CS graduate specialising in enterprise Java development, Spring Boot, and secure REST API design, with proven experience architecting and deploying full-stack backend systems using JPA/Hibernate, SQL, and Docker. Also skilled in automation and applied AI/ML, including computer vision projects built with YOLOv5 and PyTorch. Seeking a Software Engineer role to build scalable, high-availability enterprise systems.
+                      </p>
+            </div>
+        </div>
+      </div>
+      <a class="arrow" href="#experience" aria-label="Go to the Experience section"><img src="images/icon-arrow.webp" alt="" class="icon" width="96" height="97" loading="lazy" decoding="async" /></a>
+    </section>
+    <section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h2 class="title">Experience</h2>
+  
+  <div class="experience-grid-wrapper">
+    <div class="details-container">
+      <h3 class="experience-sub-title">Languages</h3>
+        <ul class="chip-list" aria-label="Languages">
+          <li class="chip"><img src="images/skills/java.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />Java</li>
+          <li class="chip"><img src="images/skills/javascript.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />JavaScript</li>
+          <li class="chip"><img src="images/skills/python.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />Python</li>
+          <li class="chip"><img src="images/skills/html5.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />HTML5</li>
+          <li class="chip"><img src="images/skills/css3.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />CSS3</li>
+          <li class="chip"><i class="fa-solid fa-database" aria-hidden="true"></i>SQL</li>
+        </ul>
+    </div>
+
+    <div class="details-container">
+      <h3 class="experience-sub-title">Framework &amp; Tools/Technical skills</h3>
+      <h4 class="chip-group-title">Backend</h4>
+        <ul class="chip-list" aria-label="Backend">
+          <li class="chip"><img src="images/skills/spring.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />Spring Boot</li>
+          <li class="chip"><img src="images/skills/hibernate.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />JPA / Hibernate</li>
+          <li class="chip"><i class="fa-solid fa-plug" aria-hidden="true"></i>REST APIs</li>
+        </ul>
+      <h4 class="chip-group-title">Data and delivery</h4>
+        <ul class="chip-list" aria-label="Data and delivery">
+          <li class="chip"><img src="images/skills/postgresql.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />PostgreSQL</li>
+          <li class="chip"><img src="images/skills/docker.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />Docker</li>
+          <li class="chip"><img src="images/skills/git.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />Git &amp; CI/CD</li>
+        </ul>
+      <h4 class="chip-group-title">AI and computer vision</h4>
+        <ul class="chip-list" aria-label="AI and computer vision">
+          <li class="chip"><img src="images/skills/pytorch.svg" alt="" width="20" height="20" loading="lazy" decoding="async" />YOLOv5 &amp; PyTorch</li>
+        </ul>
+    </div>
+
+    <div class="details-container core-concepts-box">
+      <h3 class="experience-sub-title">Core Concepts</h3>
+        <ul class="chip-list" aria-label="Core concepts">
+          <li class="chip"><i class="fa-solid fa-cubes" aria-hidden="true"></i>OOP Architecture</li>
+          <li class="chip"><i class="fa-solid fa-table" aria-hidden="true"></i>Relational DBMS</li>
+          <li class="chip"><i class="fa-solid fa-sitemap" aria-hidden="true"></i>Data Structures &amp; Algos</li>
+          <li class="chip"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i>System Design</li>
+        </ul>
+    </div>
+  </div>
+
+  <a class="arrow" href="#coding-profiles" aria-label="Go to the Coding Profiles section"><img src="images/icon-arrow.webp" alt="" class="icon" width="96" height="97" loading="lazy" decoding="async" /></a>
+</section>
+<section id="coding-profiles">
+      <p class="section__text__p1">Check Out My</p>
+      <h2 class="title">Coding Profiles</h2>
+
+      <div class="coding-profiles-container">
+        
+        <a
+          href="https://leetcode.com/u/srinivassayinni/"
+          target="_blank"
+          class="profile-link-bar"
+        >
+          <img
+            src="leetcode.svg"
+            alt="LeetCode"
+            class="profile-logo"
+            height="35"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="profile-username">srinivassayinni</span>
+          <span class="profile-stats"></span>
+          <i class="fa-solid fa-arrow-up profile-arrow" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://takeuforward.org/profile/srinivas800"
+          target="_blank"
+          class="profile-link-bar"
+        >
+          <img
+            src="images/logo-takeuforward.webp"
+            alt="takeUforward"
+            class="profile-logo"
+            width="140" height="145"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="profile-username">srinivas sayinni</span>
+          <span class="profile-stats"></span>
+          <i class="fa-solid fa-arrow-up profile-arrow" aria-hidden="true"></i>
+        </a>
+
+      </div>
+      <a class="arrow" href="#projects" aria-label="Go to the Projects section"><img src="images/icon-arrow.webp" alt="" class="icon" width="96" height="97" loading="lazy" decoding="async" /></a>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h2 class="title">Projects</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-automob.webp" alt="Illustration of the Automob-Mechanic booking site: a tablet with maintenance, body repair and car care options, and a phone showing a confirmed appointment" class="project-img" width="754" height="689" loading="lazy" decoding="async"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Automob-Mechanic — Full Stack Car Service Booking System</h3>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/Srinivas800/Automob-Mechanic">Github</a>
+              <a class="btn btn-color-2 project-btn" href="https://automob-mechanic.onrender.com/admin/index.html">Live Demo</a>
+            </div>
+            <p class="demo-status" id="automob-status" role="status" data-state="idle" data-demo-url="https://automob-mechanic.onrender.com/admin/index.html">
+              <span class="demo-dot" aria-hidden="true"></span>
+              <span class="demo-status-text">The live demo runs on a free server, so the first load can take up to 90 seconds.</span>
+            </p>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-pedal-pro.webp" alt="Pedal Pro Rentals, an AI bike rental assistant built on Salesforce Agentforce, shown as a chat window beside a mountain bike" class="project-img" width="1000" height="667" loading="lazy" decoding="async"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Agentforce — Pedal Pro Rentals</h3>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/Srinivas800/Agentforce--Pedal-Pro-Rental">Github</a>
+              <!-- <a class="btn btn-color-2 project-btn" href="https://automob-mechanic.onrender.com/admin/index.html">Live Demo</a> -->
+            </div>
+            <br>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-job-alert.webp" alt="Automated job alert system for software roles: a laptop and phone with a shield and email icon, built with Python and GitHub" class="project-img" width="706" height="761" loading="lazy" decoding="async"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">Automated Job Alert System for Software Roles(Email daily at 12 PM IST)</h3>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/Srinivas800/daily-job-email">Github</a>
+              <a class="btn btn-color-2 project-btn" href="https://youtu.be/PjhM1kWfIXM" target="_blank" rel="noopener noreferrer">Watch Demo<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+          
+
+          <div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="images/project-yolo-esca.webp" alt="YOLO-ESCA helmet detection dashboard showing 94.7% mAP and 65.3 FPS over workers wearing hard hats" class="project-img" width="767" height="711" loading="lazy" decoding="async"
+    />
+  </div>
+  <h3 class="experience-sub-title project-title">Advanced YOLO-ESCA Framework for Helmet Wearing Compliance Detection  </h3>
+ <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://github.com/Srinivas800/Advanced-YOLO-ESCA-Framework-for-Enhanced-Helmet-Wearing-Compliance-Detection">Github</a>
+              <a class="btn btn-color-2 project-btn" href="https://www.youtube.com/watch?v=eunlGNuFzlo" target="_blank" rel="noopener noreferrer">Watch Demo<span class="sr-only"> (opens in a new tab)</span></a>
+ <!-- <a class="btn btn-color-2 project-btn" href="https://drive.google.com/file/d/1h3j6c6oYVSs6YNXe5pR5ceIXUqIwiLT0/view?usp=sharing" target="_blank" rel="noopener noreferrer">view file<span class="sr-only"> (opens in a new tab)</span></a> -->
+
+  </div>
+</div>
+        </div>
+      </div>
+      <a class="arrow" href="#certificates" aria-label="Go to the Certificates section"><img src="images/icon-arrow.webp" alt="" class="icon" width="96" height="97" loading="lazy" decoding="async" /></a>
+</section>
+<section id="certificates">
+      <p class="section__text__p1">Explore My</p>
+      <h2 class="title">Certificates</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h3 class="experience-sub-title project-title">Agentforce Specialist</h3>
+  <p style="text-align: center; margin-bottom: 1.5rem;">
+    Issued by: Salesforce
+  </p>
+  <div class="btn-container">
+    <button type="button" class="btn btn-color-2 project-btn" aria-haspopup="dialog" onclick="openImageModal('AgentcertModal')">
+      View Credential
+    </button>
+  </div>
+</div>
+           <div class="details-container color-container">
+            <div class="article-container">
+              </div>
+            <h3 class="experience-sub-title project-title">Certificate Of Merit Naukri Campus Young Turks 2026 </h3>
+            <p style="text-align: center; margin-bottom: 1.5rem;">
+              Issued by: HCLTech
+            </p>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://www.naukri.com/campus/certificates/young_turks26_round_1_achievement/v0/6acf493596ebe313e740c60b?utm_source=certificate&utm_medium=copy&utm_campaign=6acf493596ebe313e740c60b">View Credential</a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h3 class="experience-sub-title project-title">HTML5 & CSS Application Development Fundamentals</h3>
+  <p style="text-align: center; margin-bottom: 1.5rem;">
+    Issued by: Infosys Springboard
+  </p>
+  <div class="btn-container">
+    <button type="button" class="btn btn-color-2 project-btn" aria-haspopup="dialog" onclick="openImageModal('infosysCertModal')">
+      View Credential
+    </button>
+  </div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    </div>
+  <h3 class="experience-sub-title project-title">SaWiT.AI Challenge</h3>
+  <p style="text-align: center; margin-bottom: 1.5rem;">
+    Issued by:HCLTech
+  </p>
+  <div class="btn-container">
+    <a class="btn btn-color-2 project-btn" href="https://www.guvi.in/share-certificate/253c7995U7h1yW017P">View Credential</a>
+  </div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    </div>
+  <h3 class="experience-sub-title project-title">Python</h3>
+  <p style="text-align: center; margin-bottom: 1.5rem;">
+    Issued by: HCLTech
+  </p>
+  <div class="btn-container">
+    <a class="btn btn-color-2 project-btn" href="https://www.guvi.in/share-certificate/720365d714sP6uBI17">View Credential</a>
+  </div>
+</div>
+<div class="details-container color-container">
+            <div class="article-container">
+              </div>
+            <h3 class="experience-sub-title project-title">AI Fundamentals with IBM SkillsBuild</h3>
+            <p style="text-align: center; margin-bottom: 1.5rem;">
+              Issued by: Cisco
+            </p>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="https://www.credly.com/badges/d2aa590c-e453-4258-99fe-dd035c49b0a5/public_url">View Credential</a>
+            </div>
+          </div>
+          </div>
+      </div>
+      <a class="arrow" href="#contact" aria-label="Go to the Contact section"><img src="images/icon-arrow.webp" alt="" class="icon" width="96" height="97" loading="lazy" decoding="async" /></a>
+    </section>
+   
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h2 class="title">Contact Me</h2>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="images/icon-email.webp"
+            alt=""
+            class="icon contact-icon email-icon"
+            width="120" height="82"
+            loading="lazy"
+            decoding="async"
+          />
+          <p><a href="mailto:srinivassayinni@gmail.com">srinivassayinni@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="images/icon-linkedin.webp"
+            alt=""
+            class="icon contact-icon"
+            width="96" height="97"
+            loading="lazy"
+            decoding="async"
+          />
+          <p><a href="https://www.linkedin.com/in/sayinni-srinivas-aa208a267?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FcKUwpYAQwqpK2ZQStfKMw%3D%3D">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    </main>
+    <div id="imageModal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <button type="button" class="close-btn" aria-label="Close certificate preview" onclick="closeImageModal()">&times;</button>
+      <div class="modal-content">
+        <img id="AgentcertModal" class="modal-image" src="images/cert-agentforce.webp" alt="Salesforce Agentforce Specialist certificate" width="1028" height="586" loading="lazy" decoding="async">
+        <img id="infosysCertModal" class="modal-image" src="images/cert-infosys.webp" alt="Infosys Springboard HTML5 and CSS Application Development Fundamentals certificate" width="933" height="672" loading="lazy" decoding="async">
+        <img id="workInProgressModal" class="modal-image" src="images/cert-work-in-progress.webp" alt="Work in progress" width="771" height="705" loading="lazy" decoding="async">
+      </div>
+    </div>
+    <footer>
+      <div class="status-board" role="group" aria-labelledby="status-title">
+        <h2 id="status-title" class="status-title">System status</h2>
+        <dl class="status-grid">
+          <div class="status-item">
+            <dt>Demo server (Render)</dt>
+            <dd data-state="idle" id="st-demo-wrap"><span class="demo-dot" aria-hidden="true"></span><span id="st-demo">Not checked yet</span></dd>
+          </div>
+          <div class="status-item">
+            <dt>Latest commit</dt>
+            <dd id="st-commit">Loading…</dd>
+          </div>
+          <div class="status-item">
+            <dt>Your time</dt>
+            <dd id="st-local">--:--:--</dd>
+          </div>
+          <div class="status-item">
+            <dt>My time</dt>
+            <dd id="st-ist">--:--:--</dd>
+          </div>
+          <div class="status-item">
+            <dt>This page</dt>
+            <dd id="st-load">Measuring…</dd>
+          </div>
+        </dl>
+      </div>
+      <nav aria-label="Footer">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#coding-profiles">Coding Profiles</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2026 <span class="highlight-name">Srinivas Sayinni</span>. All Rights Reserved.</p>
+    </footer>
+    <style>
+      .concepts-container .article-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: start;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </body>
+</html>
