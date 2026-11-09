@@ -343,6 +343,11 @@ display: flex;
   margin-top: 2rem;
 }
 
+/* five boxes: three on the first row, then AI/ML beside a wider Core Concepts */
+.core-concepts-box {
+  grid-column: span 2;
+}
+
 /* Uniform Skills Grid inside each Details Box */
 .skills-grid {
   display: grid;
